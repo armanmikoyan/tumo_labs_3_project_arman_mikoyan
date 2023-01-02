@@ -1,0 +1,337 @@
+	body {
+		background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+		padding: 0;
+		margin: 0;
+	}
+
+	a{
+		text-decoration: none;
+		color: #252861;
+		font-weight: bold;
+	}
+
+
+	/*header*/
+
+
+	ul{
+		display: flex;
+		list-style-type: none;
+		justify-content: space-around;
+		font-size: 30px;
+		color: #343885;
+		font-weight: bold;
+		
+		border-bottom: 2px solid #000;
+		padding-bottom: 30px;
+	}
+
+
+	ul li{
+		cursor: pointer;
+	}
+	/*header*/
+
+
+
+	/* body*/
+
+		.main-body{
+			text-align: center;
+			max-width: 900px;
+			margin: 300px auto;
+			color: #1d216b;
+			font-size: 35px;
+		}
+
+
+	/* body*/
+
+	/* Posts*/
+	.post-body h1{
+		text-align: center;
+		margin-top: 150px;
+	}
+
+	.posts{
+		max-width: 80%;
+		margin: 100px auto;
+		background-image: linear-gradient(135deg, #629fc7 0%, #686cc0 100%);
+		padding: 50px 70px;
+		border-radius: 15px;
+		position: relative;
+
+
+	}
+
+	.post h3{
+		font-size: 35px;
+		margin-top: -10px;
+		font-weight: bold;
+		
+	}
+
+	.post p{
+		font-size: 37px;
+		color: rgb(207, 223, 223);
+	}
+
+	.bottom{
+
+		bottom: 10px;
+		font-size: 25px;
+		color: #1d216b;
+		font-weight: bold;
+	}
+
+	.bottom-left{
+		position: absolute;
+		
+		left: 50px;
+
+	}
+
+	.bottom-rigth{
+		position: absolute;
+		right: 50px;
+		
+	}
+	/* Posts*/
+
+
+
+	/* form*/
+
+	input{
+		padding: 10px 10px;
+		font-size: 30px;
+		background-color: #173f5c7c;
+		color: azure;
+		border: 0;
+		outline: none;
+		cursor: pointer;
+	}
+
+	input:hover{
+		opacity: 0.7;
+		transition: all 0.2s ease;
+	}
+
+	label{
+		font-size: 30px;
+
+		font-weight: 400;
+		color: #ffff;
+		cursor: pointer;
+		
+	}
+
+	.title { grid-area: title; }
+	.author { grid-area: author; }
+	.main-text {grid-area: main-text}
+
+
+	form{
+		margin: 50px auto;
+		gap: 50px;
+		max-width: 1000px;
+		display: grid;
+		grid-template-areas:
+		'title  author'
+		'main-text main-text';
+		
+	}
+
+	form div{
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+
+	}
+
+
+	.text{
+		grid-template-columns: 1fr 1fr;
+	}
+	/* form*/
+
+	/* contacts*/
+
+	.contacts{
+		margin-top: 300px;
+		display: flex;
+		justify-content: center;
+		gap: 110px;
+	}
+
+	.contacts a{
+			font-size: 30px;
+			display: flex;
+			flex-direction: column;
+
+	}
+
+	/* contacts*/
+
+
+
+	/* error*/
+	.error{
+		width: 500px;
+		margin: 300px auto;
+		text-align: center;
+	}
+	.error h1{
+		font-size: 55px;
+		color: rgb(253, 0, 0);
+	}
+
+	/* error*/
+
+
+
+
+	.btn{
+		position: absolute;
+		right: 21px;	
+		top:15px;
+		cursor: pointer;
+		background-color: #686cc0;
+	
+	
+	}
+
+	button{
+		margin-left: 10px;
+		font-size:23px;
+		cursor: pointer;
+	}
+	
+
+
+
+
+	@media only screen and (max-width: 718px) {
+		ul{
+		
+			font-size: 20px;
+		
+		}
+
+
+	form{
+		margin: 50px auto;
+		gap: 50px;
+		max-width: 1000px;
+		display: grid;
+		grid-template-areas:
+		'title '
+		' author'
+		'main-text'
+		' main-text';
+		max-width: 100%;
+		
+	}
+	.main-body{
+		text-align: center;
+		max-width: 900px;
+		margin: 300px auto;
+		color: #1d216b;
+		font-size: 10px;
+	}
+	  }
+
+
+	  @media only screen and (max-width: 718px) {
+		ul{
+		
+			font-size: 10px;
+			
+			
+			border-bottom: 2px solid #000;
+			padding-bottom: 30px;
+		}
+		
+		.header{
+			
+			padding: 0;
+		}
+		form{
+			margin: 10px auto;
+			gap: 50px;
+		
+			display: grid;
+			grid-template-areas:
+			'title '
+			' author'
+			'main-text'
+			' main-text';
+			max-width: 100%;
+			
+		}
+		input{
+			padding: 1px 1px;
+			font-size: 20px;
+			background-color: #173f5c7c;
+			color: azure;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+		}
+		.contacts{
+			margin-top: 300px;
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+		}
+	
+		.contacts a{
+				font-size: 20px;
+				display: flex;
+				flex-direction: column;
+	
+		}
+
+		.posts{
+			max-width: 80%;
+			margin: 100px auto;
+			background-image: linear-gradient(135deg, #629fc7 0%, #686cc0 100%);
+			padding: 40px 30px;
+			border-radius: 15px;
+			position: relative;
+	
+	
+		}
+	
+		.post h3{
+			font-size: 20px;
+			margin-top: -10px;
+			font-weight: bold;
+			
+		}
+	
+		.post p{
+			font-size: 20px;
+			color: rgb(207, 223, 223);
+		}
+	
+		.bottom{
+	
+			bottom: 10px;
+			font-size: 20px;
+			color: #1d216b;
+			font-weight: bold;
+		}
+		.bottom-left{
+			position: absolute;
+			
+			left: 20px;
+	
+		}
+	
+		.bottom-rigth{
+			position: absolute;
+			right: 20px;
+			
+		}
+	  }
