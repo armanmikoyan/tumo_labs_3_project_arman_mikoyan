@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+	<%- include('./partials/nav.ejs') %>
+	<div class="contacts">
+	
+		<%contacts.forEach((elem)=>{%>
+			<a href="<%=elem.link %>"><%=elem.name %></a>
+        <%})%>
+	
+	</div>
+</body>
+</html>
